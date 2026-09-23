@@ -60,7 +60,7 @@ export default function HomePage() {
       {showScrollTop && (
         <button
           onClick={handleScrollToTop}
-          className="fixed bottom-4 sm:bottom-6 md:bottom-10 right-4 sm:right-6 md:right-10 p-2 sm:p-3 rounded-full bg-white text-[#0f766e] shadow-lg hover:bg-gray-100 transition-all duration-300 z-50"
+          className="fixed bottom-4 sm:bottom-6 md:bottom-10 right-4 sm:right-6 md:right-10 p-2 sm:p-3 rounded-full bg-white text-[#14213d] shadow-lg hover:bg-gray-100 transition-all duration-300 z-50"
           aria-label="Scroll to top"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 sm:h-5 md:h-6 w-4 sm:w-5 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

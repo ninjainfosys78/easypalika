@@ -57,7 +57,7 @@ const HomeContent = () => {
 
             <div className="relative py-4 md:py-6 lg:py-6">
                 {/* Blue Background Section - Full Width */}
-                <div className="w-full bg-[#0f766e] slanted-top -mt-4 sm:-mt-6 lg:-mt-8">
+                <div className="w-full bg-[#14213d] slanted-top -mt-4 sm:-mt-6 lg:-mt-8">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="relative flex flex-col lg:flex-row items-center">
                             {/* Left Content */}

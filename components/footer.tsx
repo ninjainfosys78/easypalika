@@ -15,7 +15,7 @@ export default function Footer() {
     .filter(Boolean);
 
   return (
-    <footer className="bg-[#0e6b62] text-white w-full" role="contentinfo">
+    <footer className="bg-[#14213d] text-white w-full" role="contentinfo">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.2fr_1fr] gap-x-8 gap-y-10 items-start">
           {/* Brand */}

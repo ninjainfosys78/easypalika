@@ -56,7 +56,7 @@ function ClientsContent() {
     return (
         <>
             <Reveal direction="up" className="text-center mb-10">
-                <h2 className="text-[28px] font-bold mb-2 text-[#0f766e]">
+                <h2 className="text-[28px] font-bold mb-2 text-[#14213d]">
                     {t({ en: "Our Esteemed Clients and Partners", ne: "हाम्रा आदरणीय ग्राहक र साझेदारहरू" })}
                 </h2>
                 <div className="mx-auto w-24 h-0.5 bg-gray-300 rounded mb-4" />

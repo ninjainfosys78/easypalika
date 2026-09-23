@@ -22,7 +22,7 @@ export function ClientsSection() {
       {/* Same container width as Header & Footer */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Title and Subtitle */}
-        <h2 className="text-4xl font-work-sans font-extrabold mb-5 text-[#0f766e]">
+        <h2 className="text-4xl font-work-sans font-extrabold mb-5 text-[#14213d]">
           {title}
         </h2>
         <p className="text-xl text-black max-w-3xl mx-auto mb-16">

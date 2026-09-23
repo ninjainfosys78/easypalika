@@ -232,7 +232,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
     <section className="relative bg-white py-12 md:py-16">
       {/* Top Heading and Subtitle */}
       <div className="max-w-2xl mx-auto text-center mb-8">
-        <h2 className="text-[#0f766e] font-semibold mb-2 text-[16px]">
+        <h2 className="text-[#14213d] font-semibold mb-2 text-[16px]">
           {t({ en: "Contact us", ne: "सम्पर्क गर्नुहोस्" })}
         </h2>
         <h1 className="text-[28px] font-semibold mb-2">
@@ -261,7 +261,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
       {/* Info Cards */}
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {/* Secure & Private */}
-        <div className="bg-[#e7f7f5] border border-[#a8ddd6] flex flex-col items-center justify-center py-6 min-h-[110px]">
+        <div className="bg-[#eef2f8] border border-[#a9bbd9] flex flex-col items-center justify-center py-6 min-h-[110px]">
           {/* Shield Icon (matches your provided image) */}
           <svg className="w-6 h-6 mb-2 text-black" viewBox="0 0 24 24" fill="none">
             <path d="M12 21C7 18 4 14.5 4 10V5.5L12 3l8 2.5V10c0 4.5-3 8-8 11z" stroke="black" strokeWidth="2" fill="none"/>
@@ -272,7 +272,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
           </span>
         </div>
         {/* 24-48 Hour Response */}
-        <div className="bg-[#e7f7f5] border border-[#a8ddd6] flex flex-col items-center justify-center py-6 min-h-[110px]">
+        <div className="bg-[#eef2f8] border border-[#a9bbd9] flex flex-col items-center justify-center py-6 min-h-[110px]">
           {/* Clock Icon */}
           <svg className="w-6 h-6 mb-2 text-black" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10" />
@@ -283,7 +283,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
           </span>
         </div>
         {/* Official Government Portal */}
-        <div className="bg-[#e7f7f5] border border-[#a8ddd6] flex flex-col items-center justify-center py-6 min-h-[110px]">
+        <div className="bg-[#eef2f8] border border-[#a9bbd9] flex flex-col items-center justify-center py-6 min-h-[110px]">
           {/* Calculator Icon (clean, solid display/buttons) */}
           <svg className="w-6 h-6 mb-2 text-black" viewBox="0 0 24 24" fill="none">
             <rect x="4" y="3" width="16" height="18" rx="2" stroke="black" strokeWidth="2" fill="none"/>
@@ -328,7 +328,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
                 placeholder={t({ en: "Enter your first name", ne: "आफ्नो पहिलो नाम लेख्नुहोस्" })}
                 required
                 disabled={isSubmitting}
-                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
               />
             </div>
             <div>
@@ -345,7 +345,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
                 placeholder={t({ en: "Enter your last name", ne: "आफ्नो थर नाम लेख्नुहोस्" })}
                 required
                 disabled={isSubmitting}
-                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
               />
             </div>
           </div>
@@ -366,7 +366,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
                 placeholder="Your example@gmail.com"
                 required
                 disabled={isSubmitting}
-                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
               />
             </div>
             <div>
@@ -385,7 +385,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
                 disabled={isSubmitting}
                 pattern="[\+]?[0-9]{10,14}"
                 title="Enter a valid phone number"
-                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
               />
             </div>
           </div>
@@ -406,7 +406,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
                 placeholder={t({ en: "e.g., Service inquiry", ne: "जस्तै, सेवा सोधपुछ" })}
                 required
                 disabled={isSubmitting}
-                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
               />
             </div>
             <div>
@@ -422,7 +422,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
                 name="topic"
                 placeholder={t({ en: "e.g., Municipal services", ne: "जस्तै, नगरपालिका सेवाहरू" })}
                 disabled={isSubmitting}
-                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+                className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
               />
             </div>
           </div>
@@ -442,7 +442,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
               placeholder={t({ en: "Please describe your request in detail...", ne: "कृपया आफ्नो अनुरोधलाई विस्तारमा वर्णन गर्नुहोस्..." })}
               required
               disabled={isSubmitting}
-              className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#0f766e] focus:border-[#0f766e] disabled:opacity-50"
+              className="w-full px-3 py-2 border border-gray-300 text-sm focus:ring-[#14213d] focus:border-[#14213d] disabled:opacity-50"
             ></textarea>
           </div>
 
@@ -451,7 +451,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
             <button
               type="submit"
               disabled={isSubmitting}
-              className="inline-flex items-center justify-center gap-2 bg-[#0f766e] hover:bg-[#115e59] text-white text-base px-8 py-3.5 disabled:opacity-50"
+              className="inline-flex items-center justify-center gap-2 bg-[#14213D] hover:bg-[#0B2447] text-white text-base px-8 py-3.5 disabled:opacity-50"
             >
               {isSubmitting
                 ? t({ en: "Sending...", ne: "पठाउँदै..." })
@@ -486,7 +486,7 @@ export function ContactSection({ title, details, formLabels, t }: ContactSection
               <button
                 type="button"
                 onClick={() => setShowModal(false)}
-                className="px-4 py-2 bg-[#0f766e] text-white rounded-none shadow-none hover:bg-[#0f766e]/90"
+                className="px-4 py-2 bg-[#14213D] text-white rounded-none shadow-none hover:bg-[#0B2447]"
               >
                 {t({ en: "OK", ne: "ठीक छ" })}
               </button>

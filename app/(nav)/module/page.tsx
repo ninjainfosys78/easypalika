@@ -21,7 +21,7 @@ export default function ModulePage() {
                 <div className="max-w-7xl mx-auto px-4 py-8">
                     {/* Section Header */}
                     <Reveal direction="up" className="text-center mb-10">
-                        <h2 className="text-[28px] font-bold text-[#0f766e] mb-2">
+                        <h2 className="text-[28px] font-bold text-[#14213d] mb-2">
                             {t({
                                 en: "Easy Palika Modules",
                                 ne: "इजी पालिका मोड्युल"
@@ -48,7 +48,7 @@ export default function ModulePage() {
                                     className="flex flex-col items-center border border-gray-200 bg-white rounded-none p-8 min-h-[180px] justify-center text-center hover:shadow transition"
                                 >
                                     <div className="mb-4 w-16 h-16 flex items-center justify-center">
-                                        <Icon className="w-10 h-10 text-[#0f766e]" strokeWidth={1.5} />
+                                        <Icon className="w-10 h-10 text-[#14213d]" strokeWidth={1.5} />
                                     </div>
                                     <div className={lang === 'ne' ? "text-black font-inter text-base text-center" : "text-base font-semibold text-black leading-tight"}>
                                         {t(module.name)}

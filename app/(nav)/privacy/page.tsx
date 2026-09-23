@@ -13,14 +13,14 @@ export default function PrivacyPage() {
       <Header />
       <main className="bg-white min-h-screen pb-12">
         <div className="max-w-4xl mx-auto px-4 pt-12 text-center">
-          <h2 className="text-xl font-bold text-[#0f766e] mb-2">{t({ en: "Privacy Policy", ne: "गोपनीयता नीति" })}</h2>
+          <h2 className="text-xl font-bold text-[#14213d] mb-2">{t({ en: "Privacy Policy", ne: "गोपनीयता नीति" })}</h2>
           <h1 className="text-3xl sm:text-4xl font-normal text-black mb-4 leading-snug">
             {t({
               en: "We believe privacy should be simple, transparent, and centered around you. Here's exactly how we handle your information.",
               ne: "हामी विश्वास गर्छौं कि गोपनीयता सरल, पारदर्शी र तपाईंको वरिपरि केन्द्रित हुनुपर्छ। यहाँ हामी तपाईंको जानकारीलाई कसरी व्यवस्थापन गर्छौं भन्ने कुरा छ।"
             })}
           </h1>
-          <div className="mx-auto w-32 h-0.5 bg-[#0f766e] rounded mb-8" />
+          <div className="mx-auto w-32 h-0.5 bg-[#14213d] rounded mb-8" />
         </div>
 
         <section className="max-w-4xl mx-auto px-4 mb-10">
@@ -33,9 +33,9 @@ export default function PrivacyPage() {
             </div>
             <span className="text-2xl font-bold">{t({ en: "What We Collect", ne: "हामी के संकलन गर्छौं" })}</span>
           </div>
-          <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-            <div className="font-semibold text-[#0f766e] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
-            <div className="text-[#14b8a6] text-base">
+          <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+            <div className="font-semibold text-[#14213d] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
+            <div className="text-[#0b2447] text-base">
               {t({
                 en: "We only collect the absolute essentials needed to provide our service. No creeping, no hidden trackers.",
                 ne: "हामी सेवा प्रदान गर्न आवश्यक अत्यावश्यक मात्र जानकारी संकलन गर्छौं। कुनै लुकेका ट्र्याकरहरू छैनन्।"
@@ -80,9 +80,9 @@ export default function PrivacyPage() {
             </div>
             <span className="text-2xl font-bold">{t({ en: "How We Use Your Data", ne: "हामी तपाईंको डेटा कसरी प्रयोग गर्छौं" })}</span>
           </div>
-          <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-            <div className="font-semibold text-[#0f766e] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
-            <div className="text-[#14b8a6] text-base">
+          <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+            <div className="font-semibold text-[#14213d] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
+            <div className="text-[#0b2447] text-base">
               {t({
                 en: "Your data is used solely to make the app work for you. We don't sell it to advertisers. Ever.",
                 ne: "तपाईंको डेटा केवल तपाईंको लागि एप काम गर्न प्रयोग गरिन्छ। हामी यसलाई विज्ञापनदातालाई कहिल्यै बेच्दैनौं।"
@@ -113,9 +113,9 @@ export default function PrivacyPage() {
             </div>
             <span className="text-2xl font-bold">{t({ en: "Your Rights", ne: "तपाईंका अधिकारहरू" })}</span>
           </div>
-          <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-            <div className="font-semibold text-[#0f766e] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
-            <div className="text-[#14b8a6] text-base">
+          <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+            <div className="font-semibold text-[#14213d] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
+            <div className="text-[#0b2447] text-base">
               {t({
                 en: "It's your data. You can ask to see it, fix it, or delete it whenever you want.",
                 ne: "यो तपाईंको डेटा हो। तपाईं जब चाहनुहुन्छ हेर्न, सच्याउन वा मेटाउन अनुरोध गर्न सक्नुहुन्छ।"
@@ -160,9 +160,9 @@ export default function PrivacyPage() {
             </div>
             <span className="text-2xl font-bold">{t({ en: "Cookies & Tracking", ne: "कुकीहरू र ट्र्याकिङ" })}</span>
           </div>
-          <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-            <div className="font-semibold text-[#0f766e] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
-            <div className="text-[#14b8a6] text-base">
+          <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+            <div className="font-semibold text-[#14213d] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
+            <div className="text-[#0b2447] text-base">
               {t({
                 en: "We use cookies to keep you logged in and remember your preferences. You can turn them off if you like.",
                 ne: "हामी तपाईंलाई लगइन राख्न र तपाईंको प्राथमिकता सम्झन कुकीहरू प्रयोग गर्छौं। तपाईं चाहनुहुन्छ भने तिनीहरू बन्द गर्न सक्नुहुन्छ।"
@@ -193,9 +193,9 @@ export default function PrivacyPage() {
             </div>
             <span className="text-2xl font-bold">{t({ en: "Contact Us", ne: "सम्पर्क गर्नुहोस्" })}</span>
           </div>
-          <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-            <div className="font-semibold text-[#0f766e] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
-            <div className="text-[#14b8a6] text-base">
+          <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+            <div className="font-semibold text-[#14213d] mb-1 text-sm">{t({ en: "Simply Put", ne: "सजिलो भाषामा" })}</div>
+            <div className="text-[#0b2447] text-base">
               {t({
                 en: "Got questions? We're actually human and we'd love to help clarify anything.",
                 ne: "प्रश्नहरू छन्? हामी साँच्चिकै मानव हौं र तपाईंलाई स्पष्ट पार्न मद्दत गर्न चाहन्छौं।"

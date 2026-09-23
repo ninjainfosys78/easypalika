@@ -22,10 +22,10 @@ export default function StatCard({ icon, value, suffix, label, lang, delay = 0 }
 
     return (
         <div ref={ref} style={style} className="flex flex-col items-center p-4 sm:p-6 hover:scale-105 transition">
-            <span className="bg-[#042f2e]/10 text-[#042f2e] p-3 sm:p-4 mb-2 sm:mb-4">
+            <span className="bg-[#071a33]/10 text-[#071a33] p-3 sm:p-4 mb-2 sm:mb-4">
                 {icon}
             </span>
-            <div className="text-2xl sm:text-3xl md:text-4xl text-[#042f2e] mb-1 sm:mb-2">
+            <div className="text-2xl sm:text-3xl md:text-4xl text-[#071a33] mb-1 sm:mb-2">
                 {formatStatValue(count, lang)}{suffix}
             </div>
             <div className="text-gray-600 text-center text-sm sm:text-base">

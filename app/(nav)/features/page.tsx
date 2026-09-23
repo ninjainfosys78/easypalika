@@ -18,7 +18,7 @@ export default function FeaturesPage() {
         <Fragment>
             <Header />
             <main className="bg-white min-h-screen">
-                <section className="w-full py-12 md:py-16" style={{ backgroundColor: '#eefbf9' }}>
+                <section className="w-full py-12 md:py-16" style={{ backgroundColor: '#eef2f8' }}>
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <Reveal direction="up">
                             <h2 className="text-[28px] font-bold mb-4 text-black">
@@ -27,7 +27,7 @@ export default function FeaturesPage() {
                                     ne: "स्मार्ट, जडित डिजिटल प्लेटफर्ममार्फत स्थानीय शासनलाई सरल बनाउँदै।"
                                 })}
                             </h2>
-                            <div className="w-24 h-[2px] mx-auto mb-8" style={{ backgroundColor: '#0f766e' }}></div>
+                            <div className="w-24 h-[2px] mx-auto mb-8" style={{ backgroundColor: '#14213d' }}></div>
                         </Reveal>
 
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-start">
@@ -48,7 +48,7 @@ export default function FeaturesPage() {
                                             />
                                         </div>
                                     </div>
-                                    <div className="w-16 h-[2px] mt-3 mb-2" style={{ backgroundColor: '#0f766e' }}></div>
+                                    <div className="w-16 h-[2px] mt-3 mb-2" style={{ backgroundColor: '#14213d' }}></div>
                                     <p className="text-sm text-black leading-relaxed">
                                         {t(feature.description)}
                                     </p>

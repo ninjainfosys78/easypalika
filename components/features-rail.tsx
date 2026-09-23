@@ -39,7 +39,7 @@ export default function FeatureRail() {
         return (
             <section
                 className="w-full py-12 md:py-16"
-                style={{ backgroundColor: isFeaturePage ? 'transparent' : '#eefbf9' }}
+                style={{ backgroundColor: isFeaturePage ? 'transparent' : '#eef2f8' }}
             >
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <p className="text-gray-600">{t({ en: "Loading features...", ne: "विशेषताहरू लोड हुँदैछ..." })}</p>
@@ -51,11 +51,11 @@ export default function FeatureRail() {
     return (
         <section
             className="w-full py-12 md:py-16"
-            style={{ backgroundColor: isFeaturePage ? 'transparent' : '#eefbf9' }}
+            style={{ backgroundColor: isFeaturePage ? 'transparent' : '#eef2f8' }}
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <Reveal direction="up">
-                    <p className="text-[16px] text-[#0f766e] font-medium mb-3">
+                    <p className="text-[16px] text-[#14213d] font-medium mb-3">
                         {active === 'ne' ? 'विशेषताहरु' : 'Features'}
                     </p>
                     <h2 className="text-[28px] font-bold mb-3 sm:mb-4 text-[#000000] mb-4">
@@ -63,7 +63,7 @@ export default function FeatureRail() {
                             ? 'स्मार्ट, जडित डिजिटल प्लेटफर्म मार्फत स्थानीय शासनलाई सरल बनाउँदै।'
                             : 'Simplifying local governance through a smart, connected digital platform.'}
                     </h2>
-                    <div className="w-24 h-[2px] mx-auto mb-8" style={{ backgroundColor: '#0f766e' }}></div>
+                    <div className="w-24 h-[2px] mx-auto mb-8" style={{ backgroundColor: '#14213d' }}></div>
                 </Reveal>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-start mb-8">
@@ -95,7 +95,7 @@ export default function FeatureRail() {
                     <div className="flex justify-center">
                         <a
                             href="/features"
-                            className="inline-flex items-center justify-center gap-2 bg-[#0f766e] hover:bg-[#115e59] text-white text-base px-8 py-3.5"
+                            className="inline-flex items-center justify-center gap-2 bg-[#14213D] hover:bg-[#0B2447] text-white text-base px-8 py-3.5"
                         >
                             {t({ en: 'Learn more', ne: 'थप विवरण हेर्नुहोस्' })}
                             <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

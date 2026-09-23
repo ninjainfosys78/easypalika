@@ -36,7 +36,7 @@ export const Header = () => {
         {/* LEFT: Logo */}
         <div className="flex items-center flex-shrink-0">
           <Link href="/" className="flex items-center gap-3">
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-[32px] font-extrabold text-[#0f766e]">
+            <span className="text-lg sm:text-xl md:text-2xl lg:text-[32px] font-extrabold text-[#14213d]">
               {lang === 'en' ? 'Easy Palika' : 'इजी पालिका'}
             </span>
           </Link>
@@ -53,13 +53,13 @@ export const Header = () => {
                     <Link
                       href={item.href}
                       className={`text-base font-[400] transition-colors relative group py-2 ${
-                        isActive ? 'text-[#0f766e] font-[600]' : 'text-black'
+                        isActive ? 'text-[#14213d] font-[600]' : 'text-black'
                       }`}
                     >
                       {item.label[lang]}
                       <span
                         className={`absolute bottom-0 left-0 w-full h-0.5 transition-transform origin-left duration-300 ${
-                          isActive ? 'scale-x-100 bg-[#0f766e]' : 'scale-x-0 group-hover:scale-x-100 bg-[#0f766e]'
+                          isActive ? 'scale-x-100 bg-[#14213d]' : 'scale-x-0 group-hover:scale-x-100 bg-[#14213d]'
                         }`}
                       ></span>
                     </Link>
@@ -94,7 +94,7 @@ export const Header = () => {
           <button
             aria-label="Open mobile menu"
             aria-expanded={menuOpen}
-            className="lg:hidden p-2 text-gray-700 hover:text-[#0e7c72] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0e7c72] rounded-full"
+            className="lg:hidden p-2 text-gray-700 hover:text-[#0b2447] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0b2447] rounded-full"
             onClick={() => setMenuOpen(true)}
           >
             <Menu size={28} />
@@ -104,7 +104,7 @@ export const Header = () => {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="fixed inset-x-0 top-0 z-50 bg-[#0f766e] w-screen h-[75vh] flex flex-col lg:hidden shadow-md border-b border-transparent">
+        <div className="fixed inset-x-0 top-0 z-50 bg-[#14213d] w-screen h-[75vh] flex flex-col lg:hidden shadow-md border-b border-transparent">
           <div className="flex items-center justify-between px-6 py-4">
             <button
               aria-label="Close mobile menu"

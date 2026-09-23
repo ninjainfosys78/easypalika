@@ -14,7 +14,7 @@ export default function TermsPage() {
             <main className="bg-white min-h-screen pt-10">
                 <div className="max-w-3xl mx-auto px-4">
                     <div className="text-center mb-10">
-                        <span className="block font-bold text-lg mb-2 text-[#0f766e]">
+                        <span className="block font-bold text-lg mb-2 text-[#14213d]">
                             {t({
                                 en: "Terms of Service",
                                 ne: "सेवा सर्तहरू"
@@ -26,7 +26,7 @@ export default function TermsPage() {
                                 ne: "हाम्रो प्लेटफर्म प्रयोग गर्नका लागि आधारभूत नियमहरू। हामीले कानुनी भाषालाई न्यूनतम राख्न प्रयास गरेका छौं।"
                             })}
                         </h2>
-                        <div className="mx-auto w-32 h-0.5 bg-[#0f766e] rounded" />
+                        <div className="mx-auto w-32 h-0.5 bg-[#14213d] rounded" />
                     </div>
 
                     <section className="mb-10">
@@ -44,11 +44,11 @@ export default function TermsPage() {
                                 })}
                             </span>
                         </div>
-                        <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-                            <div className="font-semibold text-[#0f766e] mb-1 text-sm">
+                        <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+                            <div className="font-semibold text-[#14213d] mb-1 text-sm">
                                 {t({ en: "Simply Put", ne: "सजिलो भाषामा" })}
                             </div>
-                            <div className="text-[#14b8a6] text-base">
+                            <div className="text-[#0b2447] text-base">
                                 {t({
                                     en: "You're responsible for your account security. Please don't share your password with the entire internet.",
                                     ne: "तपाईं आफ्नो खाताको सुरक्षाको लागि जिम्मेवार हुनुहुन्छ। कृपया आफ्नो पासवर्ड इन्टरनेटमा सबैसँग साझा नगर्नुहोस्।"
@@ -84,11 +84,11 @@ export default function TermsPage() {
                                 })}
                             </span>
                         </div>
-                        <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-                            <div className="font-semibold text-[#0f766e] mb-1 text-sm">
+                        <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+                            <div className="font-semibold text-[#14213d] mb-1 text-sm">
                                 {t({ en: "Simply Put", ne: "सजिलो भाषामा" })}
                             </div>
-                            <div className="text-[#14b8a6] text-base">
+                            <div className="text-[#0b2447] text-base">
                                 {t({
                                     en: "Be nice. Don't do illegal things, don't spam people, and don't try to break our site.",
                                     ne: "शिष्ट हुनुहोस्। गैरकानुनी कार्य नगर्नुहोस्, मानिसहरूलाई स्प्याम नगर्नुहोस्, र हाम्रो साइट बिगार्ने प्रयास नगर्नुहोस्।"
@@ -125,11 +125,11 @@ export default function TermsPage() {
                                 })}
                             </span>
                         </div>
-                        <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-                            <div className="font-semibold text-[#0f766e] mb-1 text-sm">
+                        <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+                            <div className="font-semibold text-[#14213d] mb-1 text-sm">
                                 {t({ en: "Simply Put", ne: "सजिलो भाषामा" })}
                             </div>
-                            <div className="text-[#14b8a6] text-base">
+                            <div className="text-[#0b2447] text-base">
                                 {t({
                                     en: "We do our best to keep things running perfectly, but technology isn't perfect. We provide the service 'as is'.",
                                     ne: "हामी सबै कुरा राम्रोसँग चलाउन प्रयास गर्छौं, तर प्रविधि पूर्ण छैन। सेवा 'जस्ताको तस्तै' प्रदान गरिन्छ।"
@@ -165,11 +165,11 @@ export default function TermsPage() {
                                 })}
                             </span>
                         </div>
-                        <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-                            <div className="font-semibold text-[#0f766e] mb-1 text-sm">
+                        <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+                            <div className="font-semibold text-[#14213d] mb-1 text-sm">
                                 {t({ en: "Simply Put", ne: "सजिलो भाषामा" })}
                             </div>
-                            <div className="text-[#14b8a6] text-base">
+                            <div className="text-[#0b2447] text-base">
                                 {t({
                                     en: "We can end this relationship if rules are broken. You can leave anytime you want.",
                                     ne: "यदि नियमहरू उल्लंघन भएमा हामी यो सम्बन्ध समाप्त गर्न सक्छौं। तपाईं चाहनुहुन्छ भने जुनसुकै बेला छोड्न सक्नुहुन्छ।"
@@ -205,11 +205,11 @@ export default function TermsPage() {
                                 })}
                             </span>
                         </div>
-                        <div className="bg-[#e6f5f3] rounded-md mb-4 p-4 border-l-4 border-[#0f766e]">
-                            <div className="font-semibold text-[#0f766e] mb-1 text-sm">
+                        <div className="bg-[#dce3f0] rounded-md mb-4 p-4 border-l-4 border-[#14213d]">
+                            <div className="font-semibold text-[#14213d] mb-1 text-sm">
                                 {t({ en: "Simply Put", ne: "सजिलो भाषामा" })}
                             </div>
-                            <div className="text-[#14b8a6] text-base">
+                            <div className="text-[#0b2447] text-base">
                                 {t({
                                     en: "Got questions? We're actually human and we'd love to help clarify anything.",
                                     ne: "प्रश्नहरू छन्? हामी साँच्चिकै मानव हौं र तपाईंलाई स्पष्ट पार्न मद्दत गर्न चाहन्छौं।"

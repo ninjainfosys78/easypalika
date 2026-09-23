@@ -25,7 +25,7 @@ export function ModulesSection({ title, subtitle, onLearnMore }: ModulesSectionP
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <Reveal direction="up" className="text-center mb-10">
-                    <span className="block text-[#0f766e] text-[16px] font-inter font-medium mb-2">
+                    <span className="block text-[#14213d] text-[16px] font-inter font-medium mb-2">
                         {t({ en: "Modules", ne: "मोड्युलहरू" })}
                     </span>
                     <h2 className="text-[28px] font-bold text-black mb-2">
@@ -47,7 +47,7 @@ export function ModulesSection({ title, subtitle, onLearnMore }: ModulesSectionP
                                 className="flex flex-col items-center border border-gray-200 bg-white rounded-none p-8 min-h-[180px] justify-center text-center hover:shadow transition"
                             >
                                 <div className="mb-4 w-16 h-16 flex items-center justify-center">
-                                    <Icon className="w-10 h-10 text-[#0f766e]" strokeWidth={1.5} />
+                                    <Icon className="w-10 h-10 text-[#14213d]" strokeWidth={1.5} />
                                 </div>
                                 <div className={lang === 'ne' ? "text-black font-inter text-base text-center" : "text-base font-semibold text-black leading-tight"}>
                                     {t(module.name)}
@@ -61,7 +61,7 @@ export function ModulesSection({ title, subtitle, onLearnMore }: ModulesSectionP
                 <div className="flex justify-center">
                     <a
                         href="/module"
-                        className="inline-flex items-center justify-center gap-2 bg-[#0f766e] hover:bg-[#115e59] text-white text-base px-8 py-3.5"
+                        className="inline-flex items-center justify-center gap-2 bg-[#14213D] hover:bg-[#0B2447] text-white text-base px-8 py-3.5"
                     >
                         {t({ en: 'Learn more', ne: 'थप विवरण हेर्नुहोस्' })}
                         <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
