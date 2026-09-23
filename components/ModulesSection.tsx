@@ -2,6 +2,10 @@
 
 import { useLanguage, LocalizedString } from '@/context/LanguageContext';
 import { modulesData } from '@/lib/modulesData';
+import Reveal from '@/components/animation/Reveal';
+import { getStaggerDelay } from '@/components/animation/stagger';
+
+const GRID_COLUMNS = 5;
 
 // Add the correct type for ModulesSectionProps
 export interface ModulesSectionProps {
@@ -20,7 +24,7 @@ export function ModulesSection({ title, subtitle, onLearnMore }: ModulesSectionP
         <section className="bg-white py-12 md:py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div className="text-center mb-10">
+                <Reveal direction="up" className="text-center mb-10">
                     <span className="block text-[#0f766e] text-[16px] font-inter font-medium mb-2">
                         {t({ en: "Modules", ne: "मोड्युलहरू" })}
                     </span>
@@ -29,15 +33,17 @@ export function ModulesSection({ title, subtitle, onLearnMore }: ModulesSectionP
                     </h2>
                     <div className="mx-auto w-24 h-0.5 bg-gray-300 rounded mb-4" />
                     <p className="text-lg text-gray-700 mb-2">{t(subtitle)}</p>
-                </div>
+                </Reveal>
 
                 {/* Modules Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8">
-                    {visibleModules.map((module) => {
+                    {visibleModules.map((module, index) => {
                         const Icon = module.icon;
                         return (
-                            <div
+                            <Reveal
                                 key={module.id}
+                                direction="up"
+                                delay={getStaggerDelay(index, GRID_COLUMNS)}
                                 className="flex flex-col items-center border border-gray-200 bg-white rounded-none p-8 min-h-[180px] justify-center text-center hover:shadow transition"
                             >
                                 <div className="mb-4 w-16 h-16 flex items-center justify-center">
@@ -46,7 +52,7 @@ export function ModulesSection({ title, subtitle, onLearnMore }: ModulesSectionP
                                 <div className={lang === 'ne' ? "text-black font-inter text-base text-center" : "text-base font-semibold text-black leading-tight"}>
                                     {t(module.name)}
                                 </div>
-                            </div>
+                            </Reveal>
                         );
                     })}
                 </div>

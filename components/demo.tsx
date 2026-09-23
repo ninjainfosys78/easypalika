@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from '@/context/LanguageContext';
+import Reveal from '@/components/animation/Reveal';
 
 export default function Demo() {
     const { t } = useLanguage();
@@ -8,7 +9,7 @@ export default function Demo() {
     return (
         <section className="relative overflow-hidden bg-white py-14 md:py-20">
             <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="mx-auto max-w-5xl bg-gradient-to-br from-[#f2fdfb] to-white shadow-md shadow-[#0f766e]/10 px-6 py-10 sm:px-12 sm:py-14 text-center">
+                <Reveal direction="up" className="mx-auto max-w-5xl bg-gradient-to-br from-[#f2fdfb] to-white shadow-md shadow-[#0f766e]/10 px-6 py-10 sm:px-12 sm:py-14 text-center">
                     <h2 className="text-black text-[28px] sm:text-3xl font-bold mb-4">
                         {t({ en: 'Do you want to see the demo?', ne: 'डेमो हेर्न चाहनु हुन्छ ?' })}
                     </h2>
@@ -32,7 +33,7 @@ export default function Demo() {
                             </svg>
                         </a>
                     </div>
-                </div>
+                </Reveal>
             </div>
         </section>
     );

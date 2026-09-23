@@ -6,6 +6,10 @@ import Footer from "@/components/footer";
 import { useLanguage } from "@/context/LanguageContext";
 import Demo from "@/components/demo";
 import { clients } from "@/lib/siteData";
+import Reveal from "@/components/animation/Reveal";
+import { getStaggerDelay } from "@/components/animation/stagger";
+
+const GRID_COLUMNS = 6;
 
 const provinces = [
     { en: "Koshi Province", ne: "कोशी प्रदेश" },
@@ -51,7 +55,7 @@ function ClientsContent() {
 
     return (
         <>
-            <div className="text-center mb-10">
+            <Reveal direction="up" className="text-center mb-10">
                 <h2 className="text-[28px] font-bold mb-2 text-[#0f766e]">
                     {t({ en: "Our Esteemed Clients and Partners", ne: "हाम्रा आदरणीय ग्राहक र साझेदारहरू" })}
                 </h2>
@@ -62,7 +66,7 @@ function ClientsContent() {
                         ne: "डिजिटल रूपान्तरणका लागि नेपालभरका स्थानीय निकायहरूद्वारा विश्वास गरिएको।"
                     })}
                 </p>
-            </div>
+            </Reveal>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-8">
                 <input
@@ -87,9 +91,11 @@ function ClientsContent() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                {filteredClients.map(client => (
-                    <div
+                {filteredClients.map((client, index) => (
+                    <Reveal
                         key={client.id}
+                        direction="up"
+                        delay={getStaggerDelay(index, GRID_COLUMNS)}
                         className="
                             p-4 flex flex-col items-center justify-center h-42
                             bg-white border border-slate-300 rounded-none
@@ -105,7 +111,7 @@ function ClientsContent() {
                         <span className="text-black font-inter text-sm text-center">
                             {t(client.name)}, {client.location}
                         </span>
-                    </div>
+                    </Reveal>
                 ))}
             </div>
         </>

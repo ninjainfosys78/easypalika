@@ -4,6 +4,10 @@ import { useLanguage } from '@/context/LanguageContext';
 import { usePathname } from 'next/navigation';
 import { useFeatures } from '@/hooks/useFeatures';
 import pb, { type Feature } from '@/lib/pocketbase';
+import Reveal from '@/components/animation/Reveal';
+import { getStaggerDelay } from '@/components/animation/stagger';
+
+const GRID_COLUMNS = 5;
 
 export default function FeatureRail() {
     const { t, lang } = useLanguage();
@@ -50,19 +54,26 @@ export default function FeatureRail() {
             style={{ backgroundColor: isFeaturePage ? 'transparent' : '#eefbf9' }}
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <p className="text-[16px] text-[#0f766e] font-medium mb-3">
-                    {active === 'ne' ? 'विशेषताहरु' : 'Features'}
-                </p>
-                <h2 className="text-[28px] font-bold mb-3 sm:mb-4 text-[#000000] mb-4">
-                    {active === 'ne'
-                        ? 'स्मार्ट, जडित डिजिटल प्लेटफर्म मार्फत स्थानीय शासनलाई सरल बनाउँदै।'
-                        : 'Simplifying local governance through a smart, connected digital platform.'}
-                </h2>
-                <div className="w-24 h-[2px] mx-auto mb-8" style={{ backgroundColor: '#0f766e' }}></div>
+                <Reveal direction="up">
+                    <p className="text-[16px] text-[#0f766e] font-medium mb-3">
+                        {active === 'ne' ? 'विशेषताहरु' : 'Features'}
+                    </p>
+                    <h2 className="text-[28px] font-bold mb-3 sm:mb-4 text-[#000000] mb-4">
+                        {active === 'ne'
+                            ? 'स्मार्ट, जडित डिजिटल प्लेटफर्म मार्फत स्थानीय शासनलाई सरल बनाउँदै।'
+                            : 'Simplifying local governance through a smart, connected digital platform.'}
+                    </h2>
+                    <div className="w-24 h-[2px] mx-auto mb-8" style={{ backgroundColor: '#0f766e' }}></div>
+                </Reveal>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-start mb-8">
-                    {displayFeatures.map((feature) => (
-                        <div key={feature.id} className="flex flex-col items-center text-center md:items-start md:text-left">
+                    {displayFeatures.map((feature, index) => (
+                        <Reveal
+                            key={feature.id}
+                            direction="up"
+                            delay={getStaggerDelay(index, GRID_COLUMNS)}
+                            className="flex flex-col items-center text-center md:items-start md:text-left"
+                        >
                             <div className="w-full overflow-hidden bg-white">
                                 <div className="w-full h-40 sm:h-44 md:aspect-square">
                                     <img
@@ -76,7 +87,7 @@ export default function FeatureRail() {
                             <p className="text-sm text-[#000000] leading-relaxed mt-3">
                                 {active === 'ne' ? feature.ne_name : feature.en_name}
                             </p>
-                        </div>
+                        </Reveal>
                     ))}
                 </div>
 

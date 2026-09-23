@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from '@/context/LanguageContext';
+import Reveal from '@/components/animation/Reveal';
 
 export default function WhyEasyPalika() {
     const { t, lang } = useLanguage();
@@ -9,7 +10,7 @@ export default function WhyEasyPalika() {
         <section className="bg-[#e7f7f5] py-6 sm:py-8 md:py-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
                 <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
-                    <div className="flex-1 md:pr-8">
+                    <Reveal direction="left" className="flex-1 md:pr-8">
                         <h2 className="text-[28px] font-bold mb-3 sm:mb-4 text-[#000000] text-left">
                             {t({ en: 'Why Easy Palika?', ne: 'इजी पालिका किन ?' })}
                         </h2>
@@ -39,15 +40,15 @@ export default function WhyEasyPalika() {
                                 })}
                             </li>
                         </ul>
-                    </div>
+                    </Reveal>
 
-                    <div className="flex-1 flex justify-center md:justify-end">
+                    <Reveal direction="right" delay={150} className="flex-1 flex justify-center md:justify-end">
                         <img
                             src="/WhyPalika.png"
                             alt="Why Easy Palika Illustration"
                             className="max-w-full h-auto object-contain w-full sm:w-3/4 md:w-2/3 lg:w-[60%]"
                         />
-                    </div>
+                    </Reveal>
                 </div>
             </div>
         </section>
