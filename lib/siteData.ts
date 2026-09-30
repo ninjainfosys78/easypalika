@@ -457,10 +457,10 @@ export const siteData: FullSiteContent = {
         contactInfo: {
             title: { en: 'Get in Touch', ne: 'सम्पर्कमा रहनुहोस्' },
             details: [
-                { label: { en: '', ne: '' }, value: { en: 'Baneshwor-10, Kathmandu, Nepal', ne: 'बानेश्वर-१०, काठमाडौं' } },
-                { label: { en: 'Email', ne: 'इमेल' }, value: { en: 'info@ninjainfosys.com', ne: 'info@ninjainfosys.com' } },
-                { label: { en: 'Telephone', ne: 'टेलिफोन' }, value: { en: '01-5922361', ne: '०१-५९२२३६१' } },
-                { label: { en: 'Phone', ne: 'फोन' }, value: { en: '+977-9851343348, +977-9858042433, +977-9858042647', ne: '+९७७-९८५१३४३३४८, +९७७-९८५८०४२४३३, +९७७-९८५८०४२६४७' } },
+                { label: { en: '', ne: '' }, value: { en: 'Tinkune, Subidhanagar, Nepal', ne: 'टिंकुने, सुबिधानगर, नेपाल' } },
+                { label: { en: 'Email', ne: 'इमेल' }, value: { en: 'info@easypalika.com', ne: 'info@easypalika.com' } },
+                { label: { en: 'Phone', ne: 'फोन' }, value: { en: '+977-9852075446', ne: '+९७७-९८५२०७५४४६' } },
+                { label: { en: 'Mobile', ne: 'मोबाइल' }, value: { en: '', ne: '' } },
             ],
             note: { en: 'Scan QR for quick contact.', ne: 'छिटो सम्पर्कको लागि QR स्क्यान गर्नुहोस्।' }
         },
